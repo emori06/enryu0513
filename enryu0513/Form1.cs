@@ -17,5 +17,22 @@ namespace enryu0513
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            button2.Visible = false;
+            MessageBox.Show("ボタンを透明化しました");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            button2.Visible = true;
+            MessageBox.Show("ボタンの透明化を解除しました");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            button2.Text = "押しましたね？バレてますよ";
+            button2.Left = 0;
+        }
     }
 }
